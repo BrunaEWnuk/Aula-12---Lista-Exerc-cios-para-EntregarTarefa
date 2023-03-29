@@ -10,6 +10,6 @@ public class Exercicio07 {
             graos = graos.multiply(BigInteger.TWO);
         }
         
-        System.out.println("A soma total de grãos de trigo é: " + somatoria);
+        System.out.println("O total de grãos de trigo é: " + somatoria);
     }
 }
