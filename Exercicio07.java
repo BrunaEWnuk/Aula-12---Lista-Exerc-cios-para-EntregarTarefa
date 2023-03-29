@@ -1,16 +1,15 @@
+import java.math.BigInteger;
 public class Exercicio07 {
     public static void main(String[] args) {
 
-        int quadros = 64;
-        long somatoria = 0;
-        long totalGrãos = 1;
-
-        for (int i = 1; i <= quadros; i++) {
-            somatoria += totalGrãos;
-            totalGrãos *= 2;
+        BigInteger somatoria = BigInteger.ZERO;
+        BigInteger graos = BigInteger.ONE;
+        
+        for (int i = 1; i <= 64; i++) {
+            somatoria = somatoria.add(graos);
+            graos = graos.multiply(BigInteger.TWO);
         }
-
-        System.out.println("O número total de grãos de trigo é: " + somatoria);
+        
+        System.out.println("A soma total de grãos de trigo é: " + somatoria);
     }
 }
-    
